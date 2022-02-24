@@ -21,6 +21,8 @@ env:
   NUGET_PLUGINS_CACHE_PATH: 'C:\nuget_plugins_cache'
   # Secrets in Vault
   PAT: ${{ .secrets.testKey }}
+  LT_USERNAME: ${LT_USERNAME}
+  LT_ACCESS_KEY: ${LT_ACCESS_KEY}
 
 pre:
  # https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-list-package
