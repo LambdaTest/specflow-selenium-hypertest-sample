@@ -20,11 +20,11 @@ With TestMu AI (Formerly LambdaTest), you can run SpecFlow Selenium tests at sca
 - .NET SDK (LTS release)
 - A TestMu AI (Formerly LambdaTest) account with HyperExecute access
 
-Download the Concierge binary corresponding to the host operating system. It is recommended to download the binary in the project's Parent Directory.
+Download the HyperExecute CLI binary corresponding to the host operating system. It is recommended to download the binary in the project's Parent Directory.
 
-* Mac: https://downloads.lambdatest.com/concierge/darwin/concierge
-* Linux: https://downloads.lambdatest.com/concierge/linux/concierge
-* Windows: https://downloads.lambdatest.com/concierge/windows/concierge.exe
+* Mac: https://downloads.lambdatest.com/hyperexecute/darwin/hyperexecute
+* Linux: https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute
+* Windows: https://downloads.lambdatest.com/hyperexecute/windows/hyperexecute.exe
 
 ### Setup
 
@@ -136,7 +136,7 @@ testSuites:
 Run the following command on the terminal to trigger the tests in the C# project on the HyperExecute grid:
 
 ```bash
-./concierge --user "${ YOUR_LAMBDATEST_USERNAME()}" --key "${ YOUR_LAMBDATEST_ACCESS_KEY()}" --config specflow_hypertest_matrix_sample.yaml --verbose
+./hyperexecute --user "${ YOUR_LAMBDATEST_USERNAME()}" --key "${ YOUR_LAMBDATEST_ACCESS_KEY()}" --config specflow_hypertest_matrix_sample.yaml --verbose
 ```
 
 Visit the [HyperExecute Automation Dashboard](https://automation.lambdatest.com/hypertest) to check the status of execution.
@@ -200,7 +200,7 @@ Running the above command on the terminal gives the following output:
 Run the following command on the terminal to trigger the tests:
 
 ```bash
-./concierge --user "${ YOUR_LAMBDATEST_USERNAME()}" --key "${ YOUR_LAMBDATEST_ACCESS_KEY()}" --config specflow_hypertest_autosplit_sample.yaml --verbose
+./hyperexecute --user "${ YOUR_LAMBDATEST_USERNAME()}" --key "${ YOUR_LAMBDATEST_ACCESS_KEY()}" --config specflow_hypertest_autosplit_sample.yaml --verbose
 ```
 
 Visit the [HyperExecute Automation Dashboard](https://automation.lambdatest.com/hypertest) to check the status of execution.
@@ -210,13 +210,13 @@ Visit the [HyperExecute Automation Dashboard](https://automation.lambdatest.com/
 **Matrix mode:**
 
 ```bash
-./concierge --user "${ YOUR_LAMBDATEST_USERNAME()}" --key "${ YOUR_LAMBDATEST_ACCESS_KEY()}" --config specflow_hypertest_matrix_sample.yaml --verbose
+./hyperexecute --user "${ YOUR_LAMBDATEST_USERNAME()}" --key "${ YOUR_LAMBDATEST_ACCESS_KEY()}" --config specflow_hypertest_matrix_sample.yaml --verbose
 ```
 
 **Auto-split mode:**
 
 ```bash
-./concierge --user "${ YOUR_LAMBDATEST_USERNAME()}" --key "${ YOUR_LAMBDATEST_ACCESS_KEY()}" --config specflow_hypertest_autosplit_sample.yaml --verbose
+./hyperexecute --user "${ YOUR_LAMBDATEST_USERNAME()}" --key "${ YOUR_LAMBDATEST_ACCESS_KEY()}" --config specflow_hypertest_autosplit_sample.yaml --verbose
 ```
 
 View results on your TestMu AI dashboard.
